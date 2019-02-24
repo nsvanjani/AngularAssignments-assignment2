@@ -1,5 +1,7 @@
 <p>
   cart-component works!
-  <input type= "text"  >
-  <button (click) = "onAddItemClick($event)"> add item </button>
-</p>
+  </p>
+  <input type= "text" [(ngModel)] ="newItem">
+  <button (click) = "onAddItemClick()"> add item </button>
+
+

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  rootItems = ['apple','mangoes','bananas'];
+  onItemAddedEvent(newItem){
+    this.rootItems.push(newItem);
+    console.log(this.rootItems);
+  }
 }
