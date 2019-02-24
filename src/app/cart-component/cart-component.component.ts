@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cart-component.component.css']
 })
 export class CartComponentComponent implements OnInit {
+  items: Array<String> =[];
 
   constructor() { }
 
   ngOnInit() {
   }
-
+  onAddItemClick(event){
+    console.log('clicked');
+  }
 }
