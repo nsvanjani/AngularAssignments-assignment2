@@ -7,9 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  rootItems = ['apple','mangoes','bananas'];
+  allItems =  ['Apples', 'Bananas', 'Cherries'];
+  // rootItems = ['apple','mangoes','bananas'];
+  // onItemAddedEvent(newItem){
+  //   this.rootItems.push(newItem);
+  //   console.log(this.rootItems);
+  // }
+
   onItemAddedEvent(newItem){
-    this.rootItems.push(newItem);
-    console.log(this.rootItems);
+    this.allItems.push(newItem);
   }
 }
